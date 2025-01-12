@@ -108,7 +108,7 @@
 
 .c3box {
   background: #0008ff;
-  visibility: hidden;
+  display: none;
 }
 
 @media screen and (max-width: 960px){
@@ -131,7 +131,12 @@
   .c2box {
     order: -1;
   }
+
+  .a3box {
+    display: none;
+  }
+
   .c3box {
-    visibility: visible;
+    display: block;
   } 
 }
