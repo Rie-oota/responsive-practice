@@ -26,11 +26,11 @@
 .q3box {
   width: 300px;
   height: 300px;
-  margin: 0 75px;
 }
 
 .bluebox {
   background: #0008ff;
+  margin-right: 150px;
 }
 
 .greenbox {
@@ -57,9 +57,16 @@
   float:left;
 }
 
+.clearfix::after {
+  content:'';
+  display: block; 
+  clear:both;
+}
+
 .textbox {
   display: flex;
   justify-content: center;
+  flex-direction:row
 }
 
 .q5box {
@@ -88,18 +95,22 @@
 
 .a2box {
   background: #00ff51;
+  order: 1;
 }
 
 .b2box {
   background: #d4ff00;
+  order: 2;
 }
 
 .c2box {
   background: #ff00e1;
+  order: 3;
 }
 
 .a3box {
   background: #ff0000;
+  display: block;
 }
 
 .b3box {
@@ -119,23 +130,30 @@
   .q2box {
     background: #007bff;
   }
-  .q3box {
-    margin: 0 25px;
+  .bluebox {
+    margin-right: 50px;
+  }
+  .redbox {
+    float: none;
   }
   .blue2box {
-    clear: left;
+    float: none;
   }
   .textbox {
     flex-direction: row-reverse;
   }
-  .c2box {
-    order: -1;
+  .a2box {
+    order: 2;
   }
-
+  .b2box {
+    order: 3;
+  }
+  .c2box {
+    order: 1;
+  }
   .a3box {
     display: none;
   }
-
   .c3box {
     display: block;
   } 
